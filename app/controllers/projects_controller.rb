@@ -1,5 +1,5 @@
 class ProjectsController < ApplicationController
-    before_action :find_project, only: [:show, :edit, :update, :destroy ]
+    before_action :find_project, only: [:show, :edit, :update, :destroy, :upvote ]
 
   def index
     @projects = Project.all.order("created_at DESC")
@@ -37,14 +37,15 @@ class ProjectsController < ApplicationController
     redirect_to root_path
   end
 
-
-
-
+  def upvote
+    @project_by current_user
+    redirect_to :back
+  end
 
   private
 
       def project_params
-          params.require(:project).permit(:title, :description)
+          params.require(:project).permit(:title, :description, :image)
       end
 
       def find_project
