@@ -14,7 +14,7 @@
               <div class="form-group">
                 <%= f.input :password, required: false, input_html: { class: 'form-control' } %>
               </div>
-                <% if devise_mapping.rememberable? %>
+                <% if devise_mapping.rememberable? -%>
                   <div class="form-group">
                     <%= f.check_box :remember_me %> <%= f.label :remember_me %>
                   </div>
@@ -22,7 +22,7 @@
             </div>
 
             <div class="form-actions">
-              <%= f.button :submit, "Sign In" class: "btn btn-primary" %>
+              <%= f.button :submit, "Sign in", class: "btn btn-primary" %>
             </div>
           <% end %>
 
