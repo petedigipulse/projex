@@ -16,6 +16,8 @@ ActiveRecord::Schema.define(version: 20141227043135) do
   create_table "projects", force: true do |t|
     t.string   "title"
     t.text     "description"
+    t.text     "price"
+    t.text     "type"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "user_id"

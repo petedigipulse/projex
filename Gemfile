@@ -21,8 +21,6 @@ gem 'jbuilder', '~> 2.0'
 
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
-gem 'spring',        group: :development
-
 gem 'bootstrap-sass', '~> 3.3.1.0'
 
 gem 'simple_form', '~> 3.1.0'
@@ -36,6 +34,20 @@ gem 'rmagick', '~> 2.13.4'
 gem 'masonry-rails', '~> 0.2.4'
 
 gem 'acts_as_votable', '~> 0.10.0'
+
+# group :development, :test do
+# gem 'rspec-rails'
+# gem 'factory_girl_rails'
+# gem 'spring'
+# gem 'web-console', '~> 2.0'
+# end
+
+# group :test do
+# gem 'faker'
+# gem 'capybara'
+# gem 'guard-rspec'
+# gem 'launchy'
+# end
 
 
 
